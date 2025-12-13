@@ -1,7 +1,7 @@
 # Meetease – Online Video Conferencing Application
 
 Meetease is a full-stack MERN video-conferencing web application that supports real-time video/audio calls, screen sharing, chat, and secure meeting rooms.  
-It is inspired by modern meeting platforms and built with React,Node.js,Express,Socket.IO, and WebRTC.
+It is inspired by modern meeting platforms and built with React,Node.js,Express,Socket.IO, and WebRTC.TThis project is Dynamic.
 
 ---
 
@@ -49,39 +49,7 @@ It is inspired by modern meeting platforms and built with React,Node.js,Express,
 
 ---
 
-# Folder Structure
-meetease/
-│
-├── client/                     # React frontend (Create React App)
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   │
-│   ├── src/
-│   │   ├── assets/             # Images, logos, icons, etc.
-│   │   ├── components/         # Reusable components (Navbar, Footer, Chat, VideoPlayer)
-│   │   ├── pages/              # Main pages (Home, Login, Signup, MeetingRoom)
-│   │   ├── context/            # React Context or Redux store for state management
-│   │   ├── hooks/              # Custom hooks
-│   │   ├── services/           # API calls and Socket.IO services
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── App.css
-│   │
-│   ├── package.json
-│   └── vite.config.js           # If using Vite instead of CRA
-│
-├── server/                     # Node.js + Express backend
-│   ├── controllers/            # Logic for users, meetings, authentication
-│   ├── models/                 # MongoDB models (User, Meeting, Chat)
-│   ├── routes/                 # Express routes
-│   ├── middleware/             # Auth middleware, error handling
-│   ├── utils/                  # Helper functions (JWT, WebRTC signaling)
-│   ├── server.js               # Entry point for backend
-│   └── package.json
-│
-├── .gitignore
-└── README.md
+
 1.Install Frontend Dependencies
 cd client
 npm install
