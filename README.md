@@ -1,4 +1,4 @@
-# Meetease – Online Video Conferencing Application
+# - Online Video Conferencing Application
 
 Meetease is a full-stack MERN video-conferencing web application that supports real-time video/audio calls, screen sharing, chat, and secure meeting rooms.  
 It is inspired by modern meeting platforms and built with React,Node.js,Express,Socket.IO, and WebRTC.TThis project is Dynamic.
