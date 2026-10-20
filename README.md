@@ -1,62 +1,130 @@
-# Meetease - Online Video Conferencing Application
+# Meetease – Online Video Conferencing Application
 
-Meetease is a full-stack MERN video-conferencing web application that supports real-time video/audio calls, screen sharing, chat, and secure meeting rooms.  
-It is inspired by modern meeting platforms and built with React,Node.js,Express,Socket.IO, and WebRTC.TThis project is Dynamic.
+## 📌 Project Overview
 
----
+Meetease is a full-stack video conferencing web application that enables users to join meeting rooms and communicate through real-time audio, video, and chat. It is built using the MERN stack, Socket.IO, and WebRTC to support online meetings and collaboration.
 
-# Features
+## ✨ Features
 
-# Video & Audio
-- Real-time video and audio streaming using WebRTC  
-- Toggle Mic / Camera  
-- Auto-adjust layout based on number of participants  
+- **Real-Time Audio and Video:** Supports audio/video communication using WebRTC.
+- **Camera and Microphone Controls:** Allows users to toggle their camera and microphone.
+- **Screen Sharing:** Enables users to share their screen during meetings.
+- **Real-Time Chat:** Supports messaging between meeting participants.
+- **Participant Panel:** Displays connected participants and the participant count.
+- **User Authentication:** Provides login and registration functionality using JWT and bcrypt.
+- **Meeting Rooms:** Supports creating and joining meetings using room links or room codes.
+- **Responsive Interface:** Provides a user interface built with React, HTML, and CSS.
 
-# Screen Sharing
-- Share full screen or specific application window  
-- Automatically switches layout when screen sharing starts  
+## 🛠️ Technologies Used
 
-# Real-Time Chat
-- One-to-many messaging  
-- Chat stored inside the room session  
-- Typing indicator and timestamp support
+- **Frontend:** React.js, HTML, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB with Mongoose
+- **Real-Time Communication:** Socket.IO
+- **Audio/Video Communication:** WebRTC and Simple-Peer
+- **Authentication:** JSON Web Tokens (JWT), bcrypt
+- **API Communication:** Axios
 
-# Participants Panel
-- Live participant count  
-- List of all connected users  
-- Ability to mute/unmute own stream  
+## 📁 Project Structure
 
-# Authentication 
-- Login / Signup pages  
-- JWT + bcrypt for secure access  
-- User-specific meeting history (optional)
+```text
+Meetease/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+│
+├── server/
+│   ├── config/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── socket/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+```
 
-# Meeting Rooms
-- Unique meeting URLs  
-- Join using room code  
-- Create new meeting with a single click  
+## ⚙️ Installation and Setup
 
-# Frontend (React+HTML+CSS)
-- Responsive design  
-- Minimal UI inspired by Google Meet / Zoom  
-- Custom animated hero section  
-- Join-meeting form on homepage  
+### Prerequisites
 
-# Backend (Node + Express + Socket.IO)
-- Handles all WebRTC signaling  
-- Real-time user connection events  
-- Secure room creation and joining  
+- Node.js and npm
+- MongoDB running locally or a MongoDB connection URI
+- A modern browser with camera and microphone permissions
 
----
+### 1. Clone the Repository
 
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd Meetease-videoconferencing-application-project-main
+```
 
-1.Install Frontend Dependencies
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your repository URL.
+
+### 2. Set Up the Backend
+
+Open a terminal and run:
+
+```bash
+cd server
+npm install
+```
+
+Configure your MongoDB connection using the `MONGODB_URI` environment variable. The server uses port `5000` by default.
+
+Start the backend:
+
+```bash
+npm start
+```
+
+### 3. Set Up the Frontend
+
+Open a second terminal from the project root:
+
+```bash
 cd client
 npm install
 npm start
+```
 
-2.Install Backend Dependencies
-cd server
-npm install
-npm start
+The React development server normally opens at:
+
+```text
+http://localhost:3000
+```
+
+## 🔐 Environment Configuration
+
+Create a `.env` file in the `server` directory if you need to configure environment variables.
+
+Example:
+
+```env
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/edumeet
+JWT_SECRET=replace_with_a_secure_secret
+```
+
+Use your own secure JWT secret. Do not commit real passwords, secrets, or private database credentials to GitHub.
+
+## 🚀 Future Improvements
+
+- Deploy the frontend and backend for public access.
+- Improve meeting security and access controls.
+- Add meeting scheduling and notifications.
+- Enhance the interface and meeting experience.
+- Add automated testing and error handling.
+
+## 👨‍💻 Author
+
+**Chandan Kumar**
 
